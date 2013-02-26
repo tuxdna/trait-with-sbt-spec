@@ -1,9 +1,9 @@
-package ui2
+package ui3
 
 import observer._
 
 trait ObservableClicks extends Clickable with Subject {
-  abstract override def click():Unit = {
+  abstract override def click() = {
     super.click()
     notifyObservers
   }
